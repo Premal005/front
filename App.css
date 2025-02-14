@@ -1,0 +1,131 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+} */
+
+.profile-container {
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+  padding: 30px;
+  background-color: #f7f9fc;  /* Light pastel background */
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;  /* Smooth transition for hover effects */
+}
+
+/* Hover effect for profile container */
+.profile-container:hover {
+  transform: scale(1.02);  /* Slight zoom effect on hover */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);  /* Stronger shadow on hover */
+}
+
+/* Profile header styles */
+.profile-header {
+  text-align: center;
+  animation: fadeIn 1.5s ease-in-out; /* Fade-in animation */
+}
+
+.profile-header img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 5px solid #FF7F50;  /* Vibrant coral border */
+  transition: all 0.3s ease;  /* Smooth transition for hover effect */
+}
+
+.profile-header img:hover {
+  transform: scale(1.1);  /* Slight zoom effect on hover */
+  border-color: #FF4500;  /* Darker coral color on hover */
+}
+
+/* Header text */
+.profile-header h1 {
+  margin-top: 15px;
+  font-size: 28px;
+  font-weight: bold;
+  color: #2C3E50;  /* Dark, contrasting text color */
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: color 0.3s ease;  /* Smooth text color transition */
+}
+
+.profile-header h1:hover {
+  color: #FF6347;  /* Vibrant tomato color on hover */
+}
+
+/* Profile details */
+.profile-details {
+  margin-top: 20px;
+}
+
+.profile-details p {
+  font-size: 1.2em;
+  margin: 12px 0;
+  color: #34495E;  /* Slightly muted color for text */
+  line-height: 1.6;
+}
+
+/* Vibrant accent colors for individual profile details */
+.profile-details p:nth-child(odd) {
+  color: #FF6347;  /* Tomato color for odd paragraphs */
+  font-weight: bold;
+}
+
+.profile-details p:nth-child(even) {
+  color: #1ABC9C;  /* Vibrant turquoise for even paragraphs */
+  font-style: italic;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
